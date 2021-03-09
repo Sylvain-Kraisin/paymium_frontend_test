@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.scss';
+import {Row, Col} from "react-bootstrap";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Row className='first-row'>
+        <Col xs={2} className='dark-grey vh-10'>FINPAL</Col>
+        <Col xs={8} className='yellow vh-10'></Col>
+        <Col xs={2} className='light-grey vh-10'></Col>
+      </Row>
+      <Row className='second-row'>
+        <Col xs={2} className='dark-grey-2 vh-90'>FINPAL</Col>
+        <Col xs={8} className='light-grey vh-90'></Col>
+        <Col xs={2} className='vh-90'>Click on  one or several transactions to see details</Col>
+      </Row>
     </div>
   );
 }
